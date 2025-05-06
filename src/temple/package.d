@@ -27,7 +27,7 @@ private import std.array : appender, Appender;
 private import std.range : isOutputRange;
 private import std.typecons : scoped;
 private import std.stdio;
-private import vibe.stream;
+private import vibe.core.stream;
 
 public {
     import temple.temple_context : TempleContext;
