@@ -8,7 +8,7 @@ private {
 	import temple;
 	import vibe.http.server;
 	import vibe.textfilter.html;
-	import vibe.utils.dictionarylist;
+	import vibe.container.dictionarylist;
 	import std.stdio;
 	import std.variant;
 }
