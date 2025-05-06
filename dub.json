@@ -5,7 +5,8 @@
 	"license": "BSL-1.0",
 	"authors":
 	[
-		"Dylan Knutson"
+		"Dylan Knutson",
+		"Ciaran McGuinness"
 	],
 
 	"targetType": "library",
@@ -14,7 +15,10 @@
 	"configurations": [
 		{
 			"name": "lib",
-			"targetType": "library"
+			"targetType": "library",
+			"dependencies": {
+				"vibe-d": "~>0.7.28"
+			}
 		},
 
 		{
@@ -29,7 +33,7 @@
 		{
 			"name": "unittest-vibed",
 			"dependencies": {
-				"vibe-d": "~>0.7.28"
+				"vibe-d": "*"
 			},
 			"targetType": "executable",
 			"mainSourceFile": "src/app.d",
