@@ -27,6 +27,7 @@ private import std.array : appender, Appender;
 private import std.range : isOutputRange;
 private import std.typecons : scoped;
 private import std.stdio;
+private import vibe.core.stream;
 
 public {
     import temple.temple_context : TempleContext;
@@ -212,7 +213,7 @@ public:
         private import vibe.core.stream : OutputStream;
         private import vibe.stream.wrapper : StreamOutputRange;
 
-		void render(vibe.core.stream.OutputStream os, TempleContext tc = null) {
+		void render(OutputStream os, TempleContext tc = null) {
             static assert(isOutputRange!(vibe.stream.wrapper.StreamOutputRange, string));
 
             auto sor = StreamOutputRange(os);
