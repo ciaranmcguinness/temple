@@ -26,6 +26,7 @@ private import
 private import std.array : appender, Appender;
 private import std.range : isOutputRange;
 private import std.typecons : scoped;
+private import std.stdio : File;
 
 public {
     import temple.temple_context : TempleContext;
